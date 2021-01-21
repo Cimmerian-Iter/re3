@@ -22,7 +22,7 @@ CXXFLAGS	:=	$(CFLAGS) -fno-rtti -fno-exceptions -fpermissive
 ASFLAGS		:=	-g $(ARCH)
 LDFLAGS		=	-g $(ARCH) -Wl,-Map,$(notdir $*.map)
 LIBS		:=	-lrw -lopenal -lSDL2 -lvita2d -lvitaGL -lSceAppMgr_stub -lSceDisplay_stub -lSceCommonDialog_stub -lSceLibKernel_stub \
-				-lSceSysmodule_stub -lvitashark -lSceShaccCg_stub -lvitagl -lmathneon -lSceGxm_stub -lScePower_stub \
+				-lSceSysmodule_stub -lvitashark -lSceShaccCg_stub --lSceMotion_stub -lmathneon -lSceGxm_stub -lScePower_stub \
 				-lSceCtrl_stub -lSceHid_stub -lSceAudio_stub -lSceTouch_stub -lm -lpthread -lmpg123
 
 all:	$(TARGET).vpk
